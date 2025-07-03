@@ -3,14 +3,13 @@
 A beautiful and secure personal journaling web application built with **Node.js**, **Express**, **EJS**, and **MongoDB**. Users can register, log in, write journal entries, edit/delete them, update account details, and recover forgotten passwords.
 
 ---
+
 MyJournal Screenshot
 
-![Screenshot 2025-07-03 150948](https://github.com/user-attachments/assets/c1aad45d-197f-49e5-a59a-20113eb48856)
-![Screenshot 2025-07-03 151024](https://github.com/user-attachments/assets/8c8df876-a1e5-4509-b8e9-3c4adfc5e233)
-![Screenshot 2025-07-03 151119](https://github.com/user-attachments/assets/adf90c82-48d6-4d06-9d80-590736e3f6d3)
-![Screenshot 2025-07-03 151139](https://github.com/user-attachments/assets/83063938-a71a-414f-ac21-f5ff8b4db9a4)
-
-
+![Screenshot 2025-07-03 170527](https://github.com/user-attachments/assets/0096693c-8a2a-455a-bdf5-185bd6657182)
+![Screenshot 2025-07-03 151024](https://github.com/user-attachments/assets/3d3b9dac-1d51-4935-b221-31e1e524367a)
+![Screenshot 2025-07-03 151119](https://github.com/user-attachments/assets/c8f3e29f-38d0-46f7-9fd8-af35ca20f1d8)
+![Screenshot 2025-07-03 151139](https://github.com/user-attachments/assets/b60a2ff1-7765-47e6-83ef-86d01916ae52)
 ---
 
 ## ✨ Features
