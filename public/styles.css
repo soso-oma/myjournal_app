@@ -165,11 +165,11 @@ body.auth-page {
 
 body.auth-page .container,
 body.auth-page .form-container {
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
   margin: auto;
   background: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 11px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.22);
   text-align: center;
