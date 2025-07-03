@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - MyJournal</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+
+    <form method="POST" action="/register">
+      <input type="text" name="username" placeholder="Username" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+
+      <select name="question" id="questionSelect" onchange="toggleCustomQuestion()" required>
+        <option value="">-- Choose a security question --</option>
+        <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+        <option value="What was your childhood nickname?">What was your childhood nickname?</option>
+        <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+        <option value="What city were you born in?">What city were you born in?</option>
+        <option value="custom">Other (custom)</option>
+      </select><br>
+
+      <input type="text" id="customQuestion" name="customQuestion" placeholder="Enter your custom question" style="display:none; margin-top: 10px;" /><br>
+
+      <input type="text" name="answer" placeholder="Answer" required><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p class="error"><%= message %></p>
+    <p>Already have an account? <a href="/login">Login</a></p>
+  </div>
+
+  <script>
+    function toggleCustomQuestion() {
+      const select = document.getElementById('questionSelect');
+      const customInput = document.getElementById('customQuestion');
+      if (select.value === 'custom') {
+        customInput.style.display = 'block';
+        customInput.required = true;
+      } else {
+        customInput.style.display = 'none';
+        customInput.required = false;
+      }
+    }
+  </script>
+</body>
+</html>
