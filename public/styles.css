@@ -161,6 +161,7 @@ body.auth-page {
   flex-direction: column;
   min-height: 100vh;
   padding: 5px;
+  transform: translateY(-5%);
 }
 
 body.auth-page .container,
