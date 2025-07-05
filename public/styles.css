@@ -143,13 +143,20 @@ h3 {
 }
 
 /* ========== AUTH PAGE LAYOUT ========== */
-body.auth-page {
-  display: flex;
+body.auth-page .container,
+body.auth-page .form-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 80px auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.22);
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 20px;
+  font-size: 1.15rem;
+  overflow: visible;
+  transform: translateX(-5%);
 }
 
 /* ========== RESPONSIVE TWEAKS ========== */
@@ -160,7 +167,10 @@ body.auth-page {
   .compose-container {
     width: 90%;
     padding: 20px;
+    margin-left: 10%;
+    margin-right: auto;
   }
+}
 
   input,
   textarea,
