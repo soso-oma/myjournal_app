@@ -106,16 +106,6 @@ a:hover {
 }
 
 /* INNER CONTAINER CENTERING (login, index) */
-body.auth-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 5px;
-  margin: 20px auto 10px
-}
-
 /* OTHER INNER CONTAINERS */
 body.auth-page .container,
 body.auth-page .form-container {
