@@ -161,6 +161,7 @@ body.auth-page {
   flex-direction: column;
   min-height: 100vh;
   padding: 5px;
+  margin: 30px auto 10px;
 }
 
 body.auth-page .container,
@@ -176,6 +177,7 @@ body.auth-page .form-container {
   text-align: center;
   font-size: 1.15rem;
   overflow: visible;
+  
 }
 
 /*  RESPONSIVE TWEAKS  */
