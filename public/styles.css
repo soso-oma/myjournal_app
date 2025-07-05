@@ -153,31 +153,29 @@ h3 {
   white-space: nowrap;
 }
 
-/* AUTH PAGE CENTERING (login, index) */
+/* INNER CONTAINER */
 body.auth-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; 
   flex-direction: column;
   min-height: 100vh;
-  padding: 5px;
-  margin: 30px auto 10px;
+  padding: 30px 5% 10px; 
 }
 
 body.auth-page .container,
 body.auth-page .form-container {
   max-width: 400px;
   width: 100%;
-  margin-left: 5%;
-  margin-right: auto;
+  margin: 0 auto;
   background: #fff;
-  padding: 5px;
+  padding: 30px;
   border-radius: 11px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
   text-align: center;
   font-size: 1.15rem;
   overflow: visible;
-  
+  box-sizing: border-box;
 }
 
 /*  RESPONSIVE TWEAKS  */
