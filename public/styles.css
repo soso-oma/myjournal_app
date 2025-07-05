@@ -162,6 +162,7 @@ body.auth-page {
   min-height: 100vh;
   padding: 5px;
   transform: translateY(-5%);
+  transform: translateX(-5%);
 }
 
 body.auth-page .container,
@@ -177,6 +178,8 @@ body.auth-page .form-container {
   justify-content: center;
   font-size: 1.15rem;
   overflow: visible;
+  transform: translateY(-5%);
+  transform: translateX(-5%);
 }
 
 /*  RESPONSIVE TWEAKS  */
