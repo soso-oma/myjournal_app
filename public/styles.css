@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* ========== GLOBAL STYLES ========== */
 body {
   background-color: #f5e8ff;
   background-image: radial-gradient(#e0c6ff 1px, transparent 1px);
@@ -18,21 +18,28 @@ html, body {
   overflow-x: hidden;
 }
 
-/* FORMS & BOXES  */
-.container, .form-container {
-  max-width:400px;
+/* ========== SHARED BOX STYLES ========== */
+.container,
+.form-container,
+.dashboard-container,
+.compose-container {
+  max-width: 500px;
   margin: 30px auto;
   background: #fff;
-  padding: 35px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 16px rgba(0,0,0,0.22);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 
+/* Center content */
 .center {
   text-align: center;
 }
 
-input, textarea, button {
+/* ========== INPUTS, TEXTAREAS, BUTTONS ========== */
+input,
+textarea,
+button {
   width: 100%;
   margin: 13px 0;
   padding: 14.7px;
@@ -56,6 +63,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* ========== LINKS ========== */
 a {
   color: #6a11cb;
   text-decoration: none;
@@ -66,13 +74,14 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ========== ERROR TEXT ========== */
 .error {
   color: red;
   margin-top: 12.6px;
   font-size: 1.05rem;
 }
 
-/* JOURNAL ENTRIES */
+/* ========== JOURNAL ENTRIES ========== */
 .entries {
   list-style: none;
   padding: 0;
@@ -84,54 +93,17 @@ a:hover {
   padding: 14.7px 0;
 }
 
-/* PAGE CONTAINERS */
-.dashboard-container {
-  max-width: 500px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.16);
-  position: relative;
-  z-index: 1;
-}
-
-.compose-container {
-  max-width: 500px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.16);
-}
-
-/* INNER CONTAINER CENTERING (login, index) */
-/* OTHER INNER CONTAINERS */
-body.auth-page .container,
-body.auth-page .form-container {
-  max-width: 400px;
-  width: 100%;
-  margin-left: 5%;
-  margin-right: auto;
-  background: #fff;
-  padding: 5px;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.22);
-  text-align: center;
-  font-size: 1.15rem;
-  overflow: visible;
-}
-
-/* TYPOGRAPHY */
+/* ========== TYPOGRAPHY ========== */
 h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 15px;
   color: black;
-  overflow: visible; 
+  overflow: visible;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 1.785rem;
   text-align: center;
   color: black;
@@ -142,7 +114,7 @@ h3 {
   text-align: left;
 }
 
-/* DELETE BUTTON  */
+/* ========== DELETE BUTTON ========== */
 .btn-sm.delete-btn {
   background: #ff4d4f;
   padding: 10.5px 18.9px;
@@ -156,7 +128,7 @@ h3 {
   background: #cc0002;
 }
 
-/* WATERMARK */
+/* ========== WATERMARK ========== */
 .dashboard-container::after {
   content: 'MyJournal';
   position: absolute;
@@ -170,16 +142,28 @@ h3 {
   white-space: nowrap;
 }
 
-/*  RESPONSIVE TWEAKS  */
+/* ========== AUTH PAGE LAYOUT ========== */
+body.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ========== RESPONSIVE TWEAKS ========== */
 @media screen and (max-width: 768px) {
-  body.auth-page .container,
-  body.auth-page .form-container {
-    width: 80%;
+  .container,
+  .form-container,
+  .dashboard-container,
+  .compose-container {
+    width: 90%;
     padding: 20px;
   }
 
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     font-size: 1.1025rem;
-  box-sizing: border-box;
   }
-}
