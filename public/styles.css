@@ -167,7 +167,8 @@ body.auth-page .container,
 body.auth-page .form-container {
   max-width: 400px;
   width: 100%;
-  margin: auto;
+  margin-left: 5%;
+  margin-right: auto;
   background: #fff;
   padding: 5px;
   border-radius: 11px;
