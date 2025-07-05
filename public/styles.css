@@ -18,9 +18,9 @@ html, body {
   overflow-x: hidden;
 }
 
-/* FORMS & BOXES */
+/* FORMS & BOXES  */
 .container, .form-container {
-  max-width: 400px;
+  max-width:400px;
   margin: 30px auto;
   background: #fff;
   padding: 35px;
@@ -85,41 +85,42 @@ a:hover {
 }
 
 /* PAGE CONTAINERS */
-.container {
-  max-width: 400px;
+.dashboard-container {
+  max-width: 500px;
   margin: 30px auto;
   background: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.16);
 }
 
-/* AUTH PAGE FULL CENTERING */
+/* INNER CONTAINER CENTERING (index) */
 body.auth-page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  padding: 5px;
+  margin: 20px auto 10px
 }
 
-/* AUTH PAGE INNER CONTAINER */
+/* OTHER INNER CONTAINERS */
 body.auth-page .container,
 body.auth-page .form-container {
   max-width: 400px;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
   background: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 11px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.22);
   text-align: center;
-  justify-content: center;
   font-size: 1.15rem;
   overflow: visible;
-  margin: 30px auto;
+  transform: translateX(-5%);
 }
+
 
 /* TYPOGRAPHY */
 h1 {
@@ -127,7 +128,7 @@ h1 {
   text-align: center;
   margin-bottom: 15px;
   color: black;
-  overflow: visible;
+  overflow: visible; 
 }
 
 h2, h3 {
@@ -141,7 +142,7 @@ h3 {
   text-align: left;
 }
 
-/* DELETE BUTTON */
+/* DELETE BUTTON  */
 .btn-sm.delete-btn {
   background: #ff4d4f;
   padding: 10.5px 18.9px;
@@ -169,16 +170,16 @@ h3 {
   white-space: nowrap;
 }
 
-/* RESPONSIVE TWEAKS */
+/*  RESPONSIVE TWEAKS  */
 @media screen and (max-width: 768px) {
   body.auth-page .container,
   body.auth-page .form-container {
-    width: 90%;
-    padding: 25px;
+    width: 80%;
+    padding: 20px;
   }
 
   input, textarea, button {
     font-size: 1.1025rem;
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
 }
