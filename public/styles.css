@@ -86,10 +86,10 @@ a:hover {
 
 /* PAGE CONTAINERS */
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 30px auto;
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.16);
 }
@@ -111,14 +111,14 @@ body.auth-page .form-container {
   max-width: 400px;
   width: 90%;
   background: #fff;
-  padding: 30px;
+  padding: 10px;
   border-radius: 11px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.22);
   text-align: center;
   justify-content: center;
   font-size: 1.15rem;
   overflow: visible;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 /* TYPOGRAPHY */
