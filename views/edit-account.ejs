@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Account</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container narrow-container">
+    <h2 class="center">Edit Account Details</h2>
+
+    <% if (message) { %>
+      <p class="center error"><%= message %></p>
+    <% } %>
+
+    <form method="POST" action="/edit-account">
+      <input type="text" name="newUsername" value="<%= user.username %>" placeholder="New Username" required />
+      <input type="email" name="newEmail" value="<%= user.email %>" placeholder="New Email" required />
+      <input type="password" name="newPassword" placeholder="New Password (leave blank to keep current)" />
+
+      <label for="newQuestion">Security Question</label>
+      <select name="newQuestion" id="newQuestion">
+        <option value="">-- Select a question --</option>
+        <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+        <option value="What was your first pet's name?">What was your first pet's name?</option>
+        <option value="What city were you born in?">What city were you born in?</option>
+        <option value="custom">Custom Question</option>
+      </select>
+
+      <input type="text" name="customQuestion" placeholder="Custom Security Question (if selected)" />
+      <input type="text" name="newAnswer" placeholder="Answer to Security Question" required />
+
+      <button type="submit">Update Account</button>
+    </form>
+
+    <hr style="margin: 30px 0;" />
+
+    <form method="POST" action="/delete-account" onsubmit="return confirm('Are you sure you want to delete your account? This cannot be undone.');">
+      <button type="submit" style="background-color: #e74c3c;">Delete Account</button>
+    </form>
+
+    <div class="center" style="margin-top: 20px;">
+      <a href="/dashboard">← Back to Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>
