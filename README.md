@@ -6,10 +6,11 @@ A beautiful and secure personal journaling web application built with **Node.js*
 
 MyJournal Screenshot
 
-![Screenshot 2025-07-03 170527](https://github.com/user-attachments/assets/0096693c-8a2a-455a-bdf5-185bd6657182)
-![Screenshot 2025-07-03 151024](https://github.com/user-attachments/assets/3d3b9dac-1d51-4935-b221-31e1e524367a)
-![Screenshot 2025-07-03 151119](https://github.com/user-attachments/assets/c8f3e29f-38d0-46f7-9fd8-af35ca20f1d8)
-![Screenshot 2025-07-03 151139](https://github.com/user-attachments/assets/b60a2ff1-7765-47e6-83ef-86d01916ae52)
+![Screenshot 2025-07-03 170527](https://github.com/user-attachments/assets/3ef04ef8-5018-4518-ac41-1945358df3ef)
+![Screenshot 2025-07-06 224036](https://github.com/user-attachments/assets/daea6832-162c-480b-a8f2-e8f76af1e94d)
+![Screenshot 2025-07-06 224527](https://github.com/user-attachments/assets/12d81d94-189c-4da7-85b2-178c4a440e45)
+![Screenshot 2025-07-06 224628](https://github.com/user-attachments/assets/a85e8268-d4bd-404f-8b34-ad26b3c670e0)
+
 ---
 
 ## ✨ Features
@@ -25,7 +26,7 @@ MyJournal Screenshot
 
 ## 🚀 Live Demo
 
-You can try the app on [Render](https://myjournal-app-kk1r.onrender.com)
+You can try the app on [Render](https://myjournal-app-kygs.onrender.com)
 
 ---
 
