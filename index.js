@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
-  secret: 'secretkey',
+  secret: 'process.env.MONGO_URI',
   resave: false,
   saveUninitialized: false
 }));
